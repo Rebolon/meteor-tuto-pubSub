@@ -1,0 +1,19 @@
+<head>
+  <title>tutoPubSub</title>
+</head>
+
+<body>
+  {{> datas}}
+</body>
+
+<template name="datas">
+<h1>Tutorial Pub/Sub</h1>
+  {{#each list}}
+    {{>item}}
+  {{/each}}
+  <input type="button" value="Click {{clickCounter}}" />
+</template>
+
+<template name="item">
+  {{value}}<br />
+</template>
